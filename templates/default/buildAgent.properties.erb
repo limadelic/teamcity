@@ -1,9 +1,9 @@
-serverUrl=http://<%= @web_server %>/
-name=<%= @hostname %>
-workDir=../work
-tempDir=../temp
-systemDir=../system
-ownPort=9090
+serverUrl=http://<%= node[:teamcity][:web_server] %>/
+name=<%= node[:teamcity][:hostname] %>
+workDir=<%= node[:teamcity][:workDir] %>
+tempDir=<%= node[:teamcity][:tempDir] %>
+systemDir=<%= node[:teamcity][:systemDir] %>
+ownPort=<%= node[:teamcity][:ownPort] %>
 authorizationToken=
 env.pool.buildenv=unallocated
 env.2k8
